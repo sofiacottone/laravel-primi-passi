@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'greeting' => 'Hello',
+        'name' => 'Laravel',
+        'logo' => 'https://img.icons8.com/arcade/64/laravel.png',
+    ];
+
+    return view('home', $data);
 });
