@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Laravel!</h1>
+    <img src="{{ $logo }}" alt="{{ $name }}"/>
+    <h1>{{ $greeting }} {{ $name }}!</h1>
 </body>
 </html>
